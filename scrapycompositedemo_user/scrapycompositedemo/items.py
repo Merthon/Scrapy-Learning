@@ -1,15 +1,9 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
 from scrapy import Field, Item
-
 
 class BookItem(Item):
     authors = Field()
     catalog = Field()
-    comments = Field()
+    comment = Field()
     cover = Field()
     id = Field()
     introduction = Field()
@@ -17,7 +11,7 @@ class BookItem(Item):
     name = Field()
     page_number = Field()
     price = Field()
-    published_at = Field()
+    publish_at = Field()
     publisher = Field()
     score = Field()
     tags = Field()
